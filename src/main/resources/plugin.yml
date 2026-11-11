@@ -1,0 +1,19 @@
+name: PluginAziende
+version: 1.0.0
+main: it.itsHyr0xx.pluginaziendeee.PluginAziende
+api-version: '1.21'
+author: itsHyr0xx
+description: Gestione aziende e assunzioni collegate a LuckPerms
+ depend: [LuckPerms]
+commands:
+  staffaziende:
+    description: Crea aziende e ranghi aziendali
+    usage: /staffaziende crea <azienda> <gruppo-massimo> | /staffaziende crea rango <azienda> <nome-rango> <gruppo>
+    permission: staffaziende
+  azienda:
+    description: Gestisci la tua azienda e assumi giocatori
+    usage: /azienda capo <azienda> | /azienda assumi <giocatore> <rango>
+permissions:
+  staffaziende:
+    description: Permette di creare aziende e ranghi aziendali
+    default: op
